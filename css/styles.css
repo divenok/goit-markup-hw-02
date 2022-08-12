@@ -7,4 +7,10 @@
 }
 /* ======end reset styles===== */
 /* ======start header======= */
+.menu-link {
+  font-family: Roboto, sans-serif;
+  font-style: 500;
+  Font size: 14px;
+  Line height: 1.14;
+  color: #212121;}
 /* ======end header====== */
