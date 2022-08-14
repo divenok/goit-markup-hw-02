@@ -6,9 +6,17 @@
   --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
   --primary-text-color-theme-light: #212121;
   --secondary-text-color-theme-light: #757575;
+  --primary-font-weight: 500;
+  --secondary-font-weight: 700;
+  --primary-line-height: 1.14;
+  --secondary-line-height: 1.71;
 }
 body {
   font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -16,13 +24,31 @@ body {
 .link {
   text-decoration: none;
 }
+/* ====== start components ====== */
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--secondary-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
 
+  color: #2196f3;
+}
+.titel-cat {
+  font-weight: var(--secondary-font-weight);
+  font-size: 36px;
+  line-height: var(--secondary-line-height);
+
+  color: var(--primary-text-color-theme-light);
+}
+/* ====== end components ====== */
 /* ====== start header ======= */
 /* ====== start novigation ====== */
+.logo-second-harf-heard {
+  color: var(--primary-text-color-theme-light);
+}
 .menu-nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: var(--primary-font-weight);
+
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
 }
@@ -33,20 +59,18 @@ body {
 /* ====== end novigation ====== */
 /* ====== start contacts header ====== */
 .mail-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: var(--primary-font-weight);
+
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-dark);
+  color: var(--primary-text-color-theme-light);
 }
 .mail-header:hover,
 .mail-header:focus {
   color: var(--accent-color);
 }
 .phone-namber-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-weight: var(--primary-font-weight);
+
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
 }
@@ -69,55 +93,38 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 .modal-btn {
-  font-family: var(--primary-font-family);
-  font-weight: 700;
+  font-weight: var(--secondary-font-weight);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
   color: var(--primary-text-color-theme-dark);
-}
-.btn {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
 /* ====== end hero ====== */
 /* ====== start features ====== */
 .features-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-weight: var(--secondary-font-weight);
   text-transform: uppercase;
   color: var(--primary-text-color-theme-light);
 }
 .descr-features {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: var(--secondary-line-height);
   color: var(--secondary-text-color-theme-light);
 }
 /* ====== end features ====== */
 /* ====== start work ====== */
-.titel-cat {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color-theme-light);
-}
+
 /* ====== end work ====== */
 /* ====== start team ====== */
 .team {
+  font-weight: var(--primary-font-weight);
+  font-size: 16px;
+  line-height: 1.19;
   background-color: #f5f4fa;
-}
-.titel-cat {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color-theme-light);
 }
 .team-item {
   background: #ffffff;
@@ -126,17 +133,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
 }
 .position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
 }
 /* ====== end team ====== */
@@ -144,33 +143,26 @@ body {
 .footer {
   background: #2f303a;
 }
-.logo {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+.addres {
+  font-style: normal;
+}
+
+.logo-second-harf-footer {
+  color: var(--primary-text-color-theme-dark);
 }
 .powst-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: var(--secondary-line-height);
+
   color: var(--primary-text-color-theme-dark);
 }
 .mail-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: var(--secondary-line-height);
+
   color: var(--secondary-text-color-theme-dark);
 }
 .phone-namber-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  line-height: var(--secondary-line-height);
+
   color: var(--secondary-text-color-theme-dark);
 }
 /* ====== end footer ====== */
