@@ -18,7 +18,7 @@ body {
   line-height: var(--primary-line-height);
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 .list {
   list-style: none;
@@ -38,12 +38,14 @@ body {
 .titel-cat {
   font-weight: var(--secondary-font-weight);
   font-size: 36px;
-  line-height: var(--secondary-line-height);}
-  
+  line-height: var(--secondary-line-height);
+}
 
 /* ====== end components ====== */
 /* ====== start header ======= */
-.logo-secondary-harf-hearder {color: var(--primary-text-color-theme-light);}
+.logo-secondary-harf-header {
+  color: var(--primary-text-color-theme-light);
+}
 .menu-nav-link,
 .mail-header,
 .phone-namber-header {
@@ -55,13 +57,14 @@ body {
 .phone-namber-header {
   color: var(--secondary-text-color-theme-light);
 }
-.menu-nav-link:active,
+.current,
 .mail-header:hover,
 .mail-header:focus {
   color: var(--accent-color);
 }
 
 /* ====== end header ====== */
+/* ====== start page Студія ====== */
 /* ====== start hero ====== */
 .hero {
   background-color: #2f303a;
@@ -89,7 +92,8 @@ body {
 
 .features-title {
   font-weight: var(--secondary-font-weight);
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
 .descr-features {
   line-height: var(--secondary-line-height);
@@ -134,3 +138,31 @@ body {
 }
 
 /* ====== end footer ====== */
+/* ====== end page Студія ====== */
+/* ====== start page Портфоліо ====== */
+
+.primary-btn,  .secondary-btn{
+  font-weight: var(--primary-font-weight);
+  font-size: 16px;
+  line-height: 1.63;
+}
+.primary-btn {
+  color: var(--primary-text-color-theme-dark);
+  background: var(--accent-color);
+}
+.secondary-btn {
+  background: #f5f4fa;
+}
+.projects-item {
+  background: var(--primary-text-color-theme-dark);
+}
+.project-item-titel {
+  font-weight: var(--secondary-font-weight);
+  font-size: 18px;
+  line-height: 2.00;
+  letter-spacing: 0.06em;
+}
+.project-direction {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-text-color-theme-light);}
