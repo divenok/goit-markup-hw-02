@@ -145,12 +145,14 @@ body {
   font-weight: var(--primary-font-weight);
   font-size: 16px;
   line-height: 1.63;
+  cursor: pointer;
 }
 .primary-btn {
   color: var(--primary-text-color-theme-dark);
   background: var(--accent-color);
 }
 .secondary-btn {
+  color: var(--primary-text-color-theme-light);
   background: #f5f4fa;
 }
 .projects-item {
