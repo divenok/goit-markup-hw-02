@@ -10,15 +10,17 @@
   --secondary-font-weight: 700;
   --primary-line-height: 1.14;
   --secondary-line-height: 1.71;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #2f303a;
+  --tertiary-background-color: #f5f4fa
 }
 body {
   font-family: var(--primary-font-family);
-  font-weight: 400;
   font-size: 14px;
   line-height: var(--primary-line-height);
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
-  background-color: #f5f5f5;
+  background-color: var(--primary-background-color);
 }
 .list {
   list-style: none;
@@ -67,7 +69,7 @@ body {
 /* ====== start page Студія ====== */
 /* ====== start hero ====== */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .mein-title {
   font-weight: 900;
@@ -92,6 +94,8 @@ body {
 
 .features-title {
   font-weight: var(--secondary-font-weight);
+  font-size: 14px;
+  line-height: var(--primary-line-height);
   text-transform: uppercase;
 }
 
@@ -106,10 +110,16 @@ body {
   font-weight: var(--primary-font-weight);
   font-size: 16px;
   line-height: 1.19;
-  background-color: #f5f4fa;
+  background-color: var(--tertiary-background-color);
 }
 .team-item {
   background-color: var(--primary-text-color-theme-dark);
+}
+.name {
+  font-weight: var(--secondary-font-weight);
+  font-size: 14px;
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.03em;
 }
 .position {
   color: var(--secondary-text-color-theme-light);
@@ -117,7 +127,7 @@ body {
 /* ====== end team ====== */
 /* ====== start footer ====== */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
 }
 .logo-secondary-harf-footer,
 .address-post {
@@ -127,13 +137,13 @@ body {
   font-style: normal;
 }
 
-.address-post,
-.footer-mail,
-.footer-phone-namber {
-  line-height: var(--secondary-line-height);
+.address-post { 
+   color: var(--primary-text-color-theme-dark);
+  
+  
 }
-.footer-mail,
-.footer-phone-namber {
+.mail-footer,
+.phone-namber-footer {
   color: var(--secondary-text-color-theme-dark);
 }
 
@@ -141,20 +151,20 @@ body {
 /* ====== end page Студія ====== */
 /* ====== start page Портфоліо ====== */
 
-.primary-btn,  .secondary-btn{
+.filters-btn {
   font-weight: var(--primary-font-weight);
   font-size: 16px;
   line-height: 1.63;
+  color: var(--primary-text-color-theme-light);
+  background: var(--tertiary-background-color);
   cursor: pointer;
 }
-.primary-btn {
+.filters-btn:hover,
+.filters-btn:focus {
   color: var(--primary-text-color-theme-dark);
   background: var(--accent-color);
 }
-.secondary-btn {
-  color: var(--primary-text-color-theme-light);
-  background: #f5f4fa;
-}
+
 .projects-item {
   background: var(--primary-text-color-theme-dark);
 }
