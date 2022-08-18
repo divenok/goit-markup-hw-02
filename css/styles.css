@@ -51,6 +51,18 @@ body {
   color: var(--primary-text-color-theme-light);
 }
 
+.menu-nav-link {
+  font-weight: var(--primary-font-weight);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+.current,
+.menu-nav-link:hover,
+.menu-nav-link:focus {
+  color: var(--accent-color);
+}
 .mail-header,
 .phone-namber-header {
   font-weight: var(--primary-font-weight);
@@ -63,17 +75,7 @@ body {
 .mail-header:focus {
   color: var(--accent-color);
 }
-.menu-nav-link {
-  font-weight: var(--primary-font-weight);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  letter-spacing: 0.02em;
-}
-.current,
-.menu-nav-link:hover,
-.menu-nav-link:focus {
-  color: var(--accent-color);
-}
+
 /* ====== end header ====== */
 /* ====== start page Студія ====== */
 /* ====== start hero ====== */
