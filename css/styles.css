@@ -183,6 +183,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-light);
 }
 .project-direction {
   font-size: var(--secondary-font-size);
