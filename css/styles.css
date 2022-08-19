@@ -15,12 +15,14 @@
   --tertiary-background-color: #f5f4fa;
   --primary-font-size: 14px;
   --secondary-font-size: 16px;
+  --primary-letter-spacing: 0.03em;
+  --secondary-letter-spacing: 0.06em;
 }
 body {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--primary-text-color-theme-light);
   background-color: var(--primary-background-color);
 }
@@ -83,18 +85,21 @@ body {
   background-color: var(--secondary-background-color);
 }
 .mein-title {
+  font-family: var(--primary-font-family);
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--secondary-letter-spacing);
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
 }
 .modal-btn {
   font-weight: var(--secondary-font-weight);
+  font-style: normal;
   font-size: var(--secondary-font-size);
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--secondary-letter-spacing);
   cursor: pointer;
   color: var(--primary-text-color-theme-dark);
   background-color: var(--accent-color);
@@ -104,10 +109,14 @@ body {
 /* ====== start work and features ====== */
 
 .features-title {
-  font-weight: var(--secondary-font-weight);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  text-transform: uppercase;
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: var(--secondary-font-weight);
+font-size: var(--primary-line-height);
+line-height: 1.14;
+letter-spacing: var(--primary-letter-spacing);
+text-transform: uppercase;
+color: var(--primary-text-color-theme-light);
 }
 
 .descr-features {
@@ -127,12 +136,17 @@ body {
   background-color: var(--primary-text-color-theme-dark);
 }
 .name {
-  font-weight: var(--secondary-font-weight);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  letter-spacing: 0.03em;
+font-family: var(--primary-font-family);
+font-style: normal;
+font-weight: var(--primary-font-weight);
+font-size: var(--secondary-font-size);
+line-height: 1.19;
+letter-spacing: var(--primary-letter-spacing);
+color: var(--primary-text-color-theme-light);
+
 }
 .position {
+  font-weight: normal;
   color: var(--secondary-text-color-theme-light);
 }
 /* ====== end team ====== */
@@ -155,7 +169,7 @@ body {
 .phone-namber-footer {
   font-size: var(--primary-font-size);
   line-height: var(--secondary-line-height);
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--secondary-text-color-theme-dark);
 }
 
@@ -164,9 +178,12 @@ body {
 /* ====== start page Портфоліо ====== */
 
 .filters-btn {
+  font-family: var(--primary-font-family);
+  font-style: normal;
   font-weight: var(--primary-font-weight);
   font-size: var(--secondary-font-size);
   line-height: 1.63;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--primary-text-color-theme-light);
   background: var(--tertiary-background-color);
   cursor: pointer;
@@ -181,10 +198,12 @@ body {
   background: var(--primary-text-color-theme-dark);
 }
 .project-item-titel {
+  font-family: var(--primary-font-family);
+  font-style: normal;
   font-weight: var(--secondary-font-weight);
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--secondary-letter-spacing);
   color: var(--primary-text-color-theme-light);
 }
 .project-direction {
